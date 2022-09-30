@@ -188,6 +188,8 @@ ul.nav>li>a:hover.active {
 }
 .navbar-toggle {
 	margin-top: 19px;
+	margin-left: 40em;
+	float: right;
 }
 .yamm.fulldark .navbar-nav > li > a {
 	padding-bottom: 10px;
@@ -199,11 +201,15 @@ ul.nav>li>a:hover.active {
 
 }
 
-@media (max-width:768px) {
+@media (max-width:415px) {
 .navbar-header {
 	width: 100%;
 }
-
+.navbar-toggle {
+	margin-top: 19px;
+	margin-left: 14.5em;
+	float: right;
+}
 }
 
 /* =========== menu item active and hover colors ============= */

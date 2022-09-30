@@ -315,7 +315,7 @@ iframe {
 }
 
 .wrap-login100-form-btn {
-  width: 100%;
+  width: 45%;
   display: block;
   position: relative;
   z-index: 1;
@@ -348,6 +348,11 @@ iframe {
   -moz-transition: all 0.4s;
   transition: all 0.4s;
 }
+
+/* .a .login100-form-bgbtn:hover {
+  left: 0;
+  cursor: pointer;
+} */
 
 .login100-form-btn {
   font-family: Poppins-Medium;

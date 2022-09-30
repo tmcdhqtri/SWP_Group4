@@ -55,7 +55,11 @@ image hover styles
 .img-hover-holder-1:hover .img-hover-1 img {
 	top:215px;
 }
-
+.fit-image{
+	width: 100%;
+	object-fit: cover;
+	height: 300px; /* only if you want fixed height */
+	}
 /*image hover style 2
  ------------------------------ */
 .img-hover-holder-2 {

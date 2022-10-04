@@ -100,10 +100,17 @@ Design and Developed by: Codelayers
 
 
 /* =========== General ============= */
-.navbar-nav li{
+.navbar-nav .rightsec{
 	display: inline-block;
 }
-
+.dropdown-toggle span{
+	display: inline-block;
+	width: 150px;
+   ;
+}
+.dropdown-toggle strong{
+	width: 150px;
+}
 body {
 	font: 14px 'Open Sans', sans-serif;
 	font-weight: normal;
@@ -5584,7 +5591,7 @@ div.demo .title span {
 	height: 40px;
 	opacity: 1;
 	position: fixed;
-	bottom: 22px;
+	bottom: 12px;
 	right: 20px;
 	display: none;
 	text-indent: -9999px;

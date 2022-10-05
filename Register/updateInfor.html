@@ -34,32 +34,30 @@
         <div class="wrapper wrapper--w680">
             <div class="card card-4">
                 <div class="card-body">
-                    <!-- Infomation of (truyền username vào)  -->
-                    <h2 class="title">Information of</h2> 
+                    <h2 class="title">Update Information Form</h2>
                     <form method="POST">
                         <div class="row row-space">
                             <div class="col">
                                 <div class="input-group">
                                     <label class="label">Full Name</label>
-                                    <label class="label-des">Tran Van Vip Pro</label>
+                                    <input class="input--style-4" type="text" name="full_name">
                                 </div>
                             </div>
                         </div>
                         <div class="row row-space">
-                            <div class="col">
+                            <div class="col-2">
                                 <div class="input-group">
                                     <label class="label">Birthday</label>
-                                    <div class="input-group">
-                                        <label class="label-des">09/09/1999</label>
+                                    <div class="input-group-icon">
+                                        <input class="input--style-4 js-datepicker" type="text" name="birthday">
+                                        <i class="zmdi zmdi-calendar-note input-icon js-btn-calendar"></i>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="row row-space">
-                            <div class="col">
+                            <div class="col-2">
                                 <div class="input-group">
                                     <label class="label">Phone Number</label>
-                                    <label class="label-des">0909999999</label>
+                                    <input class="input--style-4" type="text" name="phone">
                                 </div>
                             </div>
                         </div>
@@ -67,7 +65,7 @@
                             <div class="col">
                                 <div class="input-group">
                                     <label class="label">Email</label>
-                                    <label class="label-des">anhungvippro@vippro.com</label>
+                                    <input class="input--style-4" type="email" name="email">
                                 </div>
                             </div>
                         </div>
@@ -75,23 +73,16 @@
                             <div class="col">
                                 <div class="input-group">
                                     <label class="label">Address</label>
-                                    <label class="label-des">09 Tran Bach Dang</label>
+                                    <input class="input--style-4" type="text" name="Address">
                                 </div>
                             </div>
                         </div>
                         <div class="row row-space">
                             <div class="p-t-15">
-                                <a class="btn btn--radius-2 btn--blue" style="text-decoration: none;padding: 0px 41px;" href="/Register/updateInfor.html">Update Information</a>
+                                <button class="btn btn--radius-2 btn--blue" type="submit">Submit</button>
                             </div>
                             <div class="p-t-15">
-                                <a class="btn btn--radius-2 btn--blue" style="text-decoration: none;" href="/Register/updatePass.html">Update Password</a>
-                            </div>
-                            <div class="p-t-15">
-                                <a class="btn btn--radius-2 btn--green" style="text-decoration: none;" href="/Homepage/index.html">Back</a>
-                            </div>
-
-                            <div class="p-t-15">
-                                <a class="btn btn--radius-2 btn--blue" style="text-decoration: none; background-color: black;padding: 0px 35px;">Sign out</a>
+                                <a class="btn btn--radius-2 btn--green" style="text-decoration: none;" href="/Register/viewInfor.html">Cancel</a>
                             </div>
                         </div>
                     </form>

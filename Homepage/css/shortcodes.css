@@ -55,6 +55,19 @@ image hover styles
 .img-hover-holder-1:hover .img-hover-1 img {
 	top:215px;
 }
+.fit-image2{
+	width: 10vw;
+	height: 20vh;
+	margin:10px 20px 10px 20px ;
+	border-radius: 5%;
+	
+}
+.btn-vh{
+	border-radius:5px; 
+}
+.btn-vh:hover{
+	background-color:#ffd113;
+}
 .fit-image{
 	width: 100%;
 	object-fit: cover;

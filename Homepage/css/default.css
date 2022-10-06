@@ -100,6 +100,26 @@ Design and Developed by: Codelayers
 
 
 /* =========== General ============= */
+.fa-search{
+	position: absolute;
+	top:63.6%;
+	right:63.3%;
+}
+.search input{
+	padding: 3px 30px 3px 80px;
+    border-radius: 10px;
+    outline: none;
+    border: solid 5px #ffd133;
+    background: transparent;
+    color: #000;
+    transition: 1s linear;
+    -webkit-transition: 1s linear;
+	width:30vw
+  
+}
+.search{
+	text-align: center;
+}
 .navbar-nav .rightsec{
 	display: inline-block;
 }

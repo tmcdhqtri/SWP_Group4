@@ -62,11 +62,86 @@ image hover styles
 	border-radius: 5%;
 	
 }
+.fit-image3{
+	border: solid 5px #ffd133;
+	width: 35vw;
+	height: 65vh;
+	margin:1% 2% 1% 25% ;
+	border-radius: 5%;
+	
+}
+.rightsecofdetail{
+	margin-top: 2.5%;
+}
+
+.rightsecofdetail h2{
+	font-weight: bold;
+	font-size: 300%;
+}
 .btn-vh{
 	border-radius:5px; 
 }
 .btn-vh:hover{
 	background-color:#ffd113;
+}
+.rightbadge{
+	
+	color: orange;
+	font-weight: bold;
+	font-size: 200%;
+}
+.addbut{
+	width:20vw;
+	height: 6.5vh;
+	padding:2% 0% 2% 2%;
+	border-radius: 5px;
+	background-color: #ffd113 ;
+	color: black;
+	font-weight: bold;
+	font-size: 115%;
+	border:2px solid black;
+}
+.addbut:hover{
+	width:20vw;
+	padding:2% 0% 2% 2%;
+	border-radius: 5px;
+	background-color: black;
+	color: white;
+	font-weight: bold;
+}
+.addbut .fa-shopping-cart{
+	margin-right:5%;
+
+}
+.btnmp{
+	width: 2.5vw;
+	height: 2.2vw;
+	font-weight: bold;
+	color:black;
+background-color: orange;
+border-radius: 16%;
+
+}
+.numeric{
+	font-weight: bold;
+	margin: 5% 5% 5% 5%;
+}
+.btnmp:hover{
+	width: 2.5vw;
+	height: 2vw;
+	font-weight: bold;
+	color:white;
+background-color: black;
+border-radius: 16%;
+}
+.minusplus{
+	margin-top: 0.9%;
+}
+.rightbadge2{
+	margin-top: 5%;
+	margin-left: 2.5%;
+	width:70%;
+	border-top: 3px solid grey;
 }
 .fit-image{
 	width: 100%;

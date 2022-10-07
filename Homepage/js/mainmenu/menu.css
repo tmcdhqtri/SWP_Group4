@@ -96,7 +96,7 @@ ul.nav>li>a:hover.active {
     padding: 2px;
 }
 
- @media (min-width:769px;
+ @media (min-width:769px
 ) {
 .dropdown-submenu>.dropdown-menu:last-child {
  border-top: 0px solid #000;
@@ -1043,3 +1043,4 @@ pre {
 }
 
 
+}

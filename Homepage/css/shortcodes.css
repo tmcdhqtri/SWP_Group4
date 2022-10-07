@@ -62,6 +62,13 @@ image hover styles
 	border-radius: 5%;
 	
 }
+.fit-image4{
+	width: 7vw;
+	height: 15vh;
+	margin:10px 20px 10px 20px ;
+	border-radius: 5%;
+	
+}
 .fit-image3{
 	border: solid 5px #ffd133;
 	width: 35vw;
@@ -83,6 +90,8 @@ image hover styles
 }
 .btn-vh:hover{
 	background-color:#ffd113;
+	border-radius:5px; 
+
 }
 .rightbadge{
 	
@@ -96,10 +105,10 @@ image hover styles
 	padding:2% 0% 2% 2%;
 	border-radius: 5px;
 	background-color: #ffd113 ;
-	color: black;
+	color: grey;
 	font-weight: bold;
 	font-size: 115%;
-	border:2px solid black;
+	border:none;
 }
 .addbut:hover{
 	width:20vw;
@@ -120,7 +129,11 @@ image hover styles
 	color:black;
 background-color: orange;
 border-radius: 16%;
+border: none;
 
+}
+.table > tbody > tr > td {
+	vertical-align: middle;
 }
 .numeric{
 	font-weight: bold;
@@ -134,14 +147,32 @@ border-radius: 16%;
 background-color: black;
 border-radius: 16%;
 }
+.btnorder{
+	border-radius: 5px;
+margin-left:83.7%;
+background-color: black;
+margin-top: 2%;
+margin-bottom: 2%;
+}
+
 .minusplus{
 	margin-top: 0.9%;
+}
+.orderbtt{
+	color: white;
+}
+.orderbtt:hover{
+	color:orange;
+}
+.totalmoneyy{
+	margin-left:86%;
+	font-weight: bold;
 }
 .rightbadge2{
 	margin-top: 5%;
 	margin-left: 2.5%;
 	width:70%;
-	border-top: 3px solid grey;
+	border-top: 2px solid grey;
 }
 .fit-image{
 	width: 100%;
@@ -626,7 +657,7 @@ border-radius: 16%;
  
 ol.list-style-3 {
 	list-style-type: none;
- list-style-type: decimal !ie; /*IE 7- hack*/
+ list-style-type: decimal ; /*IE 7- hack*/
 	margin: 0;
 	margin-left: 18px;
 	padding: 0;

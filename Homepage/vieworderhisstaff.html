@@ -45,6 +45,7 @@
     <link rel="stylesheet" href="css/layouts.css" type="text/css" />
     <link rel="stylesheet" href="css/shortcodes.css" type="text/css" />
     <link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">
+
     <link rel="stylesheet" media="screen" href="css/responsive-leyouts.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="css/Simple-Line-Icons-Webfont/simple-line-icons.css" media="screen" />
     <link rel="stylesheet" href="css/et-line-font/et-line-font.css">
@@ -91,22 +92,45 @@
         <div class="clearfix"></div>
 
         <div id="header">
-            <div class="container">
+            <div class="container" style="display: flex;">
                 <div class="navbar yellow navbar-default red2 yamm">
                     <div class="navbar-header">
                         <button type="button" data-toggle="collapse" data-target="#navbar-collapse-grid"
                             class="navbar-toggle"><span class="icon-bar"></span><span class="icon-bar"></span><span
                                 class="icon-bar"></span></button>
-                        <a href="index.html" class="navbar-brand"><img src="images/logo.png" alt="" /></a>
+                        <a href="index.html" class="navbar-brand"><img src="images/Logo2.png" alt="" /></a>
                     </div>
-                    <div id="navbar-collapse-grid" class="navbar-collapse collapse pull-right">
+                    <div class="row" id="navbar-collapse-grid" class="navbar-collapse collapse pull-right">
                         <ul class="nav red2 navbar-nav">
-                            <li> <a href="index.html" class="dropdown-toggle">Home</a></li>
+                            <li> <a href="index.html" class="dropdown-toggle active">Home</a></li>
                             <li> <a href="about.html" class="dropdown-toggle">About</a></li>
-                            <li> <a href="menu.html" class="dropdown-toggle active">Menu</a></li>
+                            <li> <a href="menu.html" class="dropdown-toggle">Menu</a></li>
                             <li> <a href="special.html" class="dropdown-toggle">Special</a></li>
-                            <li> <a href="reservation.html" class="dropdown-toggle">Order Now</a></li>
+                            <!-- <li> <a href="reservation.html" class="dropdown-toggle">Order Now</a></li> -->
                             <li> <a href="contact.html" class="dropdown-toggle">Contact</a></li>
+                            <span class="hideres">
+                                <a class="navbar-brand "><img src="images/Deliver.png" alt="" /></a>
+                                <li class="rightsec" style="width:150px;margin:0">
+                                    <div>Call and Oder in</div>
+                                    <strong style="color: #ffc222;font-size: 19px;font-weight: 900;">+84
+                                        905-999-999</strong>
+                                </li>
+                            </span>
+
+                            <span class="rightsec1">
+                                <span class="hideres2">
+                                    <li class="rightsec rightsecphone "> <a class="icon1" href="\Login\index.html"><i
+                                                class="fa fa-phone" style="color:#000; font-size: 18px;"></i></a></li>
+                                    </li>
+                                </span>
+                                <li class="rightsec "> <a class="icon1" href="\Login\index.html"><i class="fa fa-user"
+                                            style="color:#000; font-size: 18px;"></i></a></li>
+                                <li class="rightsec "> <a class="icon3" href="cart.html"><i class="fa fa-shopping-cart"
+                                            style="color:#000; font-size: 18px;"></i></a>
+                                    <span class="icon4">0</span>
+                                </li>
+                            </span>
+                            <!-- <li> <a href="\" style="border: 1px solid #ccc;padding: 12px 14px;margin-top: 18px;border-radius: 26px;margin-left: 12px;"><i class="fa fa-search" style="color:#000; font-size: 18px;"></i></a></li> -->
                         </ul>
                     </div>
                 </div>
@@ -118,7 +142,7 @@
         <section>
             <div class="header-inner two">
                 <div class="inner text-center">
-                    <h4 class="title text-white uppercase old-standardtt">Cart</h4>
+                    <h4 class="title text-white uppercase old-standardtt">Customer's Order History</h4>
                     <h5 class="text-white uppercase">Get many More Features</h5>
                 </div>
                 <div class="overlay bg-opacity-5"></div>
@@ -142,78 +166,92 @@
             <thead>
                 <tr>
                     <th></th>
+                    <th>ID</th>
                     <th>Food</th>
-                    <th>Price</th>
-                    <th>Quantity</th>
                     <th>Total</th>
+                    <th>Status</th>
+                    <th>Time</th>
+                    <th>Customer Name</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
+                    <td><img src="images/cart3.jpg" alt="" class="img-responsive fit-image4" /></td>
+                    <td class="text-center">#123</td>
+                    <td class="text-center">Spaghetti</td>
+                    <td class="text-center">$ 17.00</td>
+                    <td class="text-center">
+                        21/2/2033<br>13:50
+                    </td>
+                    <td class="text-center"> Order is canceled</td>
+                    <td class="text-center">John</td>
+                    <td class="text-center">
+                        <div class="dropdown">
+                            <button class=" bt3cham  dropdown-toggle" type="button" id="dropdownMenuButton2"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fa fa-ellipsis-h"></i>
+                            </button>
+                            <div class="dropdown-menu dd3cham1" aria-labelledby="dropdownMenuButton2">
+                                <a class="dropdown-item  dd3cham" href="#">View Detail</a><br>
+                                <a class="dropdown-item dd3cham" href="#">Delete Order</a><br>
+                                <a class="dropdown-item dd3cham" href="#">Delivery Success</a><br>
+                            </div>
+                        </div></i>
+                    </td>
+                </tr>
+                <tr>
                     <td><img src="images/cart1.jpg" alt="" class="img-responsive fit-image4" /></td>
+                    <td class="text-center">#123</td>
                     <td class="text-center">Spaghetti</td>
                     <td class="text-center">$ 17.00</td>
                     <td class="text-center">
-                        <div class=" minusplus">
-                            <button type="button" class="btnmp" id="minus">-</button>
-                            <span class="numeric" id="numberPlace">0</span>
-                            <button type="button" class="btnmp" id="plus">+</button>
-                        </div>
+                        21/2/2033<br>13:50
                     </td>
-                    <td class="text-center">$ 17.00</td>
-                    <td class="text-center"><i class="fa fa-trash"></i></td>
+                    <td class="text-center"> Order is canceled</td>
+                    <td class="text-center">John</td>
+                    <td class="text-center">
+                        <div class="dropdown">
+                            <button class=" bt3cham  dropdown-toggle" type="button" id="dropdownMenuButton2"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fa fa-ellipsis-h"></i>
+                            </button>
+                            <div class="dropdown-menu dd3cham1" aria-labelledby="dropdownMenuButton2">
+                                <a class="dropdown-item  dd3cham" href="#">View Detail</a><br>
+                                <a class="dropdown-item dd3cham" href="#">Delete Order</a><br>
+                                <a class="dropdown-item dd3cham" href="#">Delivery Success</a><br>
+                            </div>
+                        </div></i>
+                    </td>
                 </tr>
                 <tr>
-                    <td><img src="images/food/Food13.png" alt="" class="img-responsive fit-image4" /></td>
+                    <td><img src="images/cart2.jpg" alt="" class="img-responsive fit-image4" /></td>
+                    <td class="text-center">#123</td>
                     <td class="text-center">Spaghetti</td>
                     <td class="text-center">$ 17.00</td>
                     <td class="text-center">
-                        <div class=" minusplus">
-                            <button type="button" class="btnmp" id="minus">-</button>
-                            <span class="numeric" id="numberPlace">0</span>
-                            <button type="button" class="btnmp" id="plus">+</button>
-                        </div>
+                        21/2/2033<br>13:50
                     </td>
-                    <td class="text-center">$ 17.00</td>
-                    <td class="text-center"><i class="fa fa-trash"></i></td>
-                </tr>
-                <tr>
-                    <td><img src="images/menu2.jpg" alt="" class="img-responsive fit-image4" /></td>
-                    <td class="text-center">Spaghetti</td>
-                    <td class="text-center">$ 17.00</td>
+                    <td class="text-center"> Order is canceled</td>
+                    <td class="text-center">John</td>
                     <td class="text-center">
-                        <div class=" minusplus">
-                            <button type="button" class="btnmp" id="minus">-</button>
-                            <span class="numeric" id="numberPlace">0</span>
-                            <button type="button" class="btnmp" id="plus">+</button>
-                        </div>
+                        <div class="dropdown">
+                            <button class=" bt3cham  dropdown-toggle" type="button" id="dropdownMenuButton2"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fa fa-ellipsis-h"></i>
+                            </button>
+                            <div class="dropdown-menu dd3cham1" aria-labelledby="dropdownMenuButton2">
+                                <a class="dropdown-item  dd3cham" href="#">View Detail</a><br>
+                                <a class="dropdown-item dd3cham" href="#">Delete Order</a><br>
+                                <a class="dropdown-item dd3cham" href="#">Delivery Success</a><br>
+                            </div>
+                        </div></i>
                     </td>
-                    <td class="text-center">$ 17.00</td>
-                    <td class="text-center"><i class="fa fa-trash"></i></td>
                 </tr>
             </tbody>
         </table>
-        <div class="row choose1">
-            <div class="col-md-12">
-                <span>Payment: </span>
-                <span class="choose4"> </span>
-                <input type="radio" id="html" name="payment" value="HTML">
-                  <label for="html">VNPAY</label>
-                <span class="choose5"> </span>
-                <input type="radio" id="html" name="payment" value="HTML">
-                  <label class="choose3" for="html">Cash</label>
-            </div>
-            <div class="col-md-12">
-                <span>Delivery: </span>
-                <span class="choose2"> </span>
-                <input type="radio" id="html" name="delivery" value="HTML">
-                  <label for="html">Restaurant</label>
-                <input type="radio" id="html" name="delivery" value="HTML">
-                  <label for="html">Home Delivery</label>
-            </div>
-        </div>
-        <div class="totalmoneyy">$ 444.34</div>
-        <button type="submit" class="btn btnorder"><a class="orderbtt" href="#">Order</a></button>
+
+
+
     </div>
     <!--end section-->
     <div class="clearfix"></div>

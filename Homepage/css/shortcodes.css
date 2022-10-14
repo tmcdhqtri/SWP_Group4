@@ -93,6 +93,21 @@ image hover styles
 	border-radius:5px; 
 
 }
+.choose1{
+	margin-left:1%;
+}
+.choose2{
+	margin-left:0.6%;
+}
+.choose4{
+	margin-left:0.2%;
+}
+.choose5{
+	margin-left:2.7%;
+}
+
+
+
 .rightbadge{
 	
 	color: orange;
@@ -138,6 +153,23 @@ border: none;
 .numeric{
 	font-weight: bold;
 	margin: 5% 5% 5% 5%;
+}
+.bt3cham{
+	text-decoration: none;
+	border: none;background-color: white;
+}
+.dd3cham{
+
+margin-left:17%;
+}
+.dd3cham:hover{
+font-weight: bold;
+	margin-left:17%;
+	transition: 0.01s;
+	}
+.dd3cham1{
+	border:2px solid rgb(90, 80, 80);
+	
 }
 .btnmp:hover{
 	width: 2.5vw;

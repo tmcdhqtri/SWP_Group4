@@ -9,15 +9,15 @@
     <meta name="description" content="Vuexy admin is super flexible, powerful, clean &amp; modern responsive bootstrap 4 admin template with unlimited possibilities.">
     <meta name="keywords" content="admin template, Vuexy admin template, dashboard template, flat admin template, responsive admin template, web app">
     <meta name="author" content="PIXINVENT">
-    <title>Invoice List - Vuexy - Bootstrap HTML admin template</title>
+    <title>Admin King's Fast Food Page</title>
     <link rel="apple-touch-icon" href="../../../app-assets/images/ico/apple-icon-120.png">
     <link rel="shortcut icon" type="image/x-icon" href="../../../app-assets/images/ico/favicon.ico">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500;1,600" rel="stylesheet">
 
     <!-- BEGIN: Vendor CSS-->
     <link rel="stylesheet" type="text/css" href="../../../app-assets/vendors/css/vendors.min.css">
-    <link rel="stylesheet" type="text/css" href="../../../app-assets/vendors/css/tables/datatable/dataTables.bootstrap4.min.css">
-    <link rel="stylesheet" type="text/css" href="../../../app-assets/vendors/css/tables/datatable/responsive.bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../../../app-assets/vendors/css/forms/select/select2.min.css">
+    <link rel="stylesheet" type="text/css" href="../../../app-assets/vendors/css/pickers/flatpickr/flatpickr.min.css">
     <!-- END: Vendor CSS-->
 
     <!-- BEGIN: Theme CSS-->
@@ -31,7 +31,9 @@
 
     <!-- BEGIN: Page CSS-->
     <link rel="stylesheet" type="text/css" href="../../../app-assets/css/core/menu/menu-types/vertical-menu.css">
-    <link rel="stylesheet" type="text/css" href="../../../app-assets/css/pages/app-invoice-list.css">
+    <link rel="stylesheet" type="text/css" href="../../../app-assets/css/plugins/forms/pickers/form-pickadate.css">
+    <link rel="stylesheet" type="text/css" href="../../../app-assets/css/plugins/forms/pickers/form-flat-pickr.css">
+    <link rel="stylesheet" type="text/css" href="../../../app-assets/css/plugins/forms/form-validation.css">
     <!-- END: Page CSS-->
 
     <!-- BEGIN: Custom CSS-->
@@ -96,7 +98,7 @@
                                     </g>
                                 </g>
                             </svg></span>
-                        <h2 class="brand-text">Vuexy</h2>
+                        <h2 class="brand-text">Admin Page</h2>
                     </a></li>
                 <li class="nav-item nav-toggle"><a class="nav-link modern-nav-toggle pr-0" data-toggle="collapse"><i class="d-block d-xl-none text-primary toggle-icon font-medium-4" data-feather="x"></i><i class="d-none d-xl-block collapse-toggle-icon font-medium-4  text-primary" data-feather="disc" data-ticon="disc"></i></a></li>
             </ul>
@@ -106,23 +108,15 @@
             <ul class="navigation navigation-main" id="main-menu-navigation" data-menu="menu-navigation">
                 <li class=" nav-item"><a class="d-flex align-items-center" href="index.html"><i data-feather="home"></i><span class="menu-title text-truncate" data-i18n="Dashboards">Dashboards</span><span class="badge badge-light-warning badge-pill ml-auto mr-1"></span></a>
                 </li>
-                <li class=" nav-item"><a class="d-flex align-items-center" href="list-food.html"><i data-feather="shopping-cart"></i><span class="menu-item text-truncate" data-i18n="List">List Food</span></a>
+                <li class="nav-item"><a class="d-flex align-items-center" href="listFood.html"><i data-feather="shopping-cart"></i><span class="menu-item text-truncate" data-i18n="List">List Food</span></a>
                 </li>
-                <li class=" nav-item"><a class="d-flex align-items-center" href="list-manager.html"><i data-feather="user"></i><span class="menu-title text-truncate" data-i18n="User">List Manager</span></a>
+                <li class=" nav-item"><a class="d-flex align-items-center" href="listManager.html"><i data-feather="user"></i><span class="menu-title text-truncate" data-i18n="User">List Manager</span></a>
                 </li>
-                <li class=" nav-item"><a class="d-flex align-items-center" href="list-staff.html"><i data-feather="user"></i><span class="menu-title text-truncate" data-i18n="User">List Staff</span></a>
+                <li class=" nav-item"><a class="d-flex align-items-center" href="listStaff.html"><i data-feather="user"></i><span class="menu-title text-truncate" data-i18n="User">List Staff</span></a>
                 </li>
-                <li class=" nav-item"><a class="d-flex align-items-center" href="#"><i data-feather="user"></i><span class="menu-title text-truncate" data-i18n="User">List Member</span></a>
-                    <ul class="menu-content">
-                        <li><a class="d-flex align-items-center" href="app-user-list.html"><i data-feather="circle"></i><span class="menu-item text-truncate" data-i18n="List">List</span></a>
-                        </li>
-                        <li><a class="d-flex align-items-center" href="app-user-view.html"><i data-feather="circle"></i><span class="menu-item text-truncate" data-i18n="View">View</span></a>
-                        </li>
-                        <li><a class="d-flex align-items-center" href="app-user-edit.html"><i data-feather="circle"></i><span class="menu-item text-truncate" data-i18n="Edit">Edit</span></a>
-                        </li>
-                    </ul>
+                <li class=" nav-item"><a class="d-flex align-items-center" href="listMembers.html"><i data-feather="user"></i><span class="menu-title text-truncate" data-i18n="User">List Member</span></a>
                 </li>
-                <li class="active nav-item"><a class="d-flex align-items-center" href="list-order.html"><i data-feather="check-square"></i><span class="menu-title text-truncate" data-i18n="User">List Order</span></a>
+                <li class=" nav-item"><a class="d-flex align-items-center" href="listOrder.html"><i data-feather="check-square"></i><span class="menu-title text-truncate" data-i18n="User">List Order</span></a>
                 </li>
                 <li class=" nav-item"><a class="d-flex align-items-center" href="page-account-settings.html"><i data-feather="settings"></i><span class="menu-item text-truncate" data-i18n="Account Settings">Account Settings</span></a>
                 </li>
@@ -137,29 +131,103 @@
         <div class="header-navbar-shadow"></div>
         <div class="content-wrapper container-xxl p-0">
             <div class="content-header row">
-            </div>
-            <div class="content-body">
-                <section class="invoice-list-wrapper">
-                    <div class="card">
-                        <div class="card-datatable table-responsive">
-                            <table class="invoice-list-table table">
-                                <thead>
-                                    <tr>
-                                        <th></th>
-                                        <th>#</th>
-                                        <th><i data-feather="trending-up"></i></th>
-                                        <th>Client</th>
-                                        <th>Total</th>
-                                        <th class="text-truncate">Issued Date</th>
-                                        <th>Balance</th>
-                                        <th>Invoice Status</th>
-                                        <th class="cell-fit">Actions</th>
-                                    </tr>
-                                </thead>
-                            </table>
+                <div class="content-header-left col-md-9 col-12 mb-2">
+                    <div class="row breadcrumbs-top">
+                        <div class="col-12">
+                            <h2 class="content-header-title float-left mb-0">Food Details</h2>
+                            <div class="breadcrumb-wrapper">
+                                <ol class="breadcrumb">
+                                    <li class="breadcrumb-item"><a href="listFood.html">List Food</a>
+                                    </li>
+                                    <li class="breadcrumb-item active"> Food Details
+                                    </li>
+                                </ol>
+                            </div>
                         </div>
                     </div>
+                </div>
+            </div>
+            <div class="content-body">
+                <!-- account setting page -->
+                <section id="page-account-settings">
+                    <div class="row">
+
+                        <!-- right content section -->
+                        <div class="col-md-12">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="tab-content">
+                                        <!-- general tab -->
+                                        <div role="tabpanel" class="tab-pane active" id="account-vertical-general" aria-labelledby="account-pill-general" aria-expanded="true">
+                                            <!-- header media -->
+                                            <div class="media">
+                                                <a href="javascript:void(0);" class="mr-25">
+                                                    <img src="https://assets.epicurious.com/photos/57c44636082060f11022b55e/16:9/w_1280,c_limit/shutterstock_368008064.jpg" id="account-upload-img" class="rounded mr-50" alt="profile image" height="120" width="120" />
+                                                </a>
+                                                <!-- upload and reset button -->
+                                                <div class="media-body mt-75 ml-1">
+                                                    <label for="account-upload" class="btn btn-sm btn-primary mb-75 mr-75">Upload</label>
+                                                    <input type="file" id="account-upload" hidden accept="image/*" />
+                                                    <!-- <button class="btn btn-sm btn-outline-secondary mb-75">Reset</button> -->
+                                                    <p>Allowed JPG, GIF or PNG. Max size of 800kB</p>
+                                                </div>
+                                                <!--/ upload and reset button -->
+                                            </div>
+                                            <!--/ header media -->
+
+                                            <!-- form -->
+                                            <form class="validate-form mt-2">
+                                                <div class="row">
+                                                    <div class="col-12 col-sm-6">
+                                                        <div class="form-group">
+                                                            <label for="food-name">Food Name</label>
+                                                            <input type="text" class="form-control" id="account-name" name="name" placeholder="Food Name" value="Chicken Fried" />
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 col-sm-6">
+                                                        <label for="food-price">Food Price</label>
+                                                        <div class="input-group mb-2">
+                                                            <div class="input-group-prepend">
+                                                                <span class="input-group-text">$</span>
+                                                            </div>
+                                                            <input type="number" class="form-control" placeholder="Price" value="100" aria-label="Amount (to the nearest dollar)" />
+                                                            <div class="input-group-append">
+                                                                <span class="input-group-text">.00</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 col-sm-12">
+                                                        <label for="food-description">Description</label>
+                                                        <div class="form-label-group mb-0">
+                                                            <textarea data-length="200" class="form-control char-textarea" id="textarea-counter" rows="4" placeholder="Description"></textarea>
+                                                        </div>
+                                                        <small class="textarea-counter-value float-right"><span class="char-count">0</span> / 200 </small>
+                                                    </div>
+                                                    <!-- Nếu save change thì hiện alert -->
+                                                    <!-- <div class="col-12 mt-75">
+                                                        <div class="alert alert-warning mb-50" role="alert">
+                                                            <h4 class="alert-heading">Saved Sucsess</h4>
+                                                        </div>
+                                                    </div> -->
+                                                    <div class="col-12">
+                                                        <button type="submit" class="btn btn-primary mt-2 mr-1">Save changes</button>
+                                                        <button type="reset" class="btn btn-outline-secondary mt-2">Cancel</button>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                            <!--/ form -->
+                                        </div>
+                                        <!--/ general tab -->
+                                        </div>
+                                        <!--/ change password -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--/ right content section -->
+                    </div>
                 </section>
+                <!-- / account setting page -->
 
             </div>
         </div>
@@ -182,12 +250,9 @@
     <!-- BEGIN Vendor JS-->
 
     <!-- BEGIN: Page Vendor JS-->
-    <script src="../../../app-assets/vendors/js/extensions/moment.min.js"></script>
-    <script src="../../../app-assets/vendors/js/tables/datatable/jquery.dataTables.min.js"></script>
-    <script src="../../../app-assets/vendors/js/tables/datatable/datatables.buttons.min.js"></script>
-    <script src="../../../app-assets/vendors/js/tables/datatable/datatables.bootstrap4.min.js"></script>
-    <script src="../../../app-assets/vendors/js/tables/datatable/dataTables.responsive.min.js"></script>
-    <script src="../../../app-assets/vendors/js/tables/datatable/responsive.bootstrap4.min.js"></script>
+    <script src="../../../app-assets/vendors/js/forms/select/select2.full.min.js"></script>
+    <script src="../../../app-assets/vendors/js/forms/validation/jquery.validate.min.js"></script>
+    <script src="../../../app-assets/vendors/js/pickers/flatpickr/flatpickr.min.js"></script>
     <!-- END: Page Vendor JS-->
 
     <!-- BEGIN: Theme JS-->
@@ -196,7 +261,7 @@
     <!-- END: Theme JS-->
 
     <!-- BEGIN: Page JS-->
-    <script src="../../../app-assets/js/scripts/pages/app-invoice-list.js"></script>
+    <script src="../../../app-assets/js/scripts/pages/page-account-settings.js"></script>
     <!-- END: Page JS-->
 
     <script>

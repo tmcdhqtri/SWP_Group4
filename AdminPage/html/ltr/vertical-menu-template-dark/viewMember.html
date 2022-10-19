@@ -108,23 +108,15 @@
             <ul class="navigation navigation-main" id="main-menu-navigation" data-menu="menu-navigation">
                 <li class=" nav-item"><a class="d-flex align-items-center" href="index.html"><i data-feather="home"></i><span class="menu-title text-truncate" data-i18n="Dashboards">Dashboards</span><span class="badge badge-light-warning badge-pill ml-auto mr-1"></span></a>
                 </li>
-                <li class="nav-item"><a class="d-flex align-items-center" href="list-food.html"><i data-feather="shopping-cart"></i><span class="menu-item text-truncate" data-i18n="List">List Food</span></a>
+                <li class="nav-item"><a class="d-flex align-items-center" href="listFood.html"><i data-feather="shopping-cart"></i><span class="menu-item text-truncate" data-i18n="List">List Food</span></a>
                 </li>
-                <li class=" nav-item"><a class="d-flex align-items-center" href="list-manager.html"><i data-feather="user"></i><span class="menu-title text-truncate" data-i18n="User">List Manager</span></a>
+                <li class=" nav-item"><a class="d-flex align-items-center" href="listManager.html"><i data-feather="user"></i><span class="menu-title text-truncate" data-i18n="User">List Manager</span></a>
                 </li>
-                <li class=" nav-item"><a class="d-flex align-items-center" href="list-staff.html"><i data-feather="user"></i><span class="menu-title text-truncate" data-i18n="User">List Staff</span></a>
+                <li class=" nav-item"><a class="d-flex align-items-center" href="listStaff.html"><i data-feather="user"></i><span class="menu-title text-truncate" data-i18n="User">List Staff</span></a>
                 </li>
-                <li class=" nav-item"><a class="d-flex align-items-center" href="#"><i data-feather="user"></i><span class="menu-title text-truncate" data-i18n="User">List Member</span></a>
-                    <ul class="menu-content">
-                        <li><a class="d-flex align-items-center" href="app-user-list.html"><i data-feather="circle"></i><span class="menu-item text-truncate" data-i18n="List">List</span></a>
-                        </li>
-                        <li><a class="d-flex align-items-center" href="app-user-view.html"><i data-feather="circle"></i><span class="menu-item text-truncate" data-i18n="View">View</span></a>
-                        </li>
-                        <li><a class="d-flex align-items-center" href="app-user-edit.html"><i data-feather="circle"></i><span class="menu-item text-truncate" data-i18n="Edit">Edit</span></a>
-                        </li>
-                    </ul>
+                <li class=" nav-item"><a class="d-flex align-items-center" href="listMembers.html"><i data-feather="user"></i><span class="menu-title text-truncate" data-i18n="User">List Member</span></a>
                 </li>
-                <li class=" nav-item"><a class="d-flex align-items-center" href="list-order.html"><i data-feather="check-square"></i><span class="menu-title text-truncate" data-i18n="User">List Order</span></a>
+                <li class=" nav-item"><a class="d-flex align-items-center" href="listOrder.html"><i data-feather="check-square"></i><span class="menu-title text-truncate" data-i18n="User">List Order</span></a>
                 </li>
                 <li class=" nav-item"><a class="d-flex align-items-center" href="page-account-settings.html"><i data-feather="settings"></i><span class="menu-item text-truncate" data-i18n="Account Settings">Account Settings</span></a>
                 </li>
@@ -142,12 +134,12 @@
                 <div class="content-header-left col-md-9 col-12 mb-2">
                     <div class="row breadcrumbs-top">
                         <div class="col-12">
-                            <h2 class="content-header-title float-left mb-0">Food Details</h2>
+                            <h2 class="content-header-title float-left mb-0">Member Details</h2>
                             <div class="breadcrumb-wrapper">
                                 <ol class="breadcrumb">
-                                    <li class="breadcrumb-item"><a href="list-food.html">List Food</a>
+                                    <li class="breadcrumb-item"><a href="listMembers.html">List Member</a>
                                     </li>
-                                    <li class="breadcrumb-item active"> Food Details
+                                    <li class="breadcrumb-item active"> Member Details
                                     </li>
                                 </ol>
                             </div>
@@ -170,7 +162,7 @@
                                             <!-- header media -->
                                             <div class="media">
                                                 <a href="javascript:void(0);" class="mr-25">
-                                                    <img src="https://assets.epicurious.com/photos/57c44636082060f11022b55e/16:9/w_1280,c_limit/shutterstock_368008064.jpg" id="account-upload-img" class="rounded mr-50" alt="profile image" height="120" width="120" />
+                                                    <img src="../../../app-assets/images/portrait/small/avatar-s-17.jpg" id="account-upload-img" class="rounded mr-50" alt="profile image" height="100" width="100" />
                                                 </a>
                                                 <!-- upload and reset button -->
                                                 <div class="media-body mt-75 ml-1">
@@ -188,28 +180,53 @@
                                                 <div class="row">
                                                     <div class="col-12 col-sm-6">
                                                         <div class="form-group">
-                                                            <label for="food-name">Food Name</label>
-                                                            <input type="text" class="form-control" id="account-name" name="name" placeholder="Food Name" value="Chicken Fried" />
+                                                            <label for="account-name">Full Name</label>
+                                                            <div class="input-group input-group-merge">
+                                                                <div class="input-group-prepend">
+                                                                    <span class="input-group-text"><i data-feather="user"></i></span>
+                                                                </div>
+                                                                <input type="text" id="fname-icon" class="form-control" name="fname-icon" placeholder="Full Name" value="Holder Park" />
+                                                            </div>
                                                         </div>
                                                     </div>
                                                     <div class="col-12 col-sm-6">
-                                                        <label for="food-price">Food Price</label>
-                                                        <div class="input-group mb-2">
-                                                            <div class="input-group-prepend">
-                                                                <span class="input-group-text">$</span>
-                                                            </div>
-                                                            <input type="number" class="form-control" placeholder="Price" value="100" aria-label="Amount (to the nearest dollar)" />
-                                                            <div class="input-group-append">
-                                                                <span class="input-group-text">.00</span>
+                                                        <div class="form-group">
+                                                            <label for="account-e-mail">E-mail</label>
+                                                            <div class="input-group input-group-merge">
+                                                                <div class="input-group-prepend">
+                                                                    <span class="input-group-text"><i data-feather="mail"></i></span>
+                                                                </div>
+                                                                <input type="email" id="email-icon" class="form-control" name="email" placeholder="Email" value="nhantv@gmail.com" />
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="col-12 col-sm-12">
-                                                        <label for="food-description">Description</label>
-                                                        <div class="form-label-group mb-0">
-                                                            <textarea data-length="200" class="form-control char-textarea" id="textarea-counter" rows="4" placeholder="Description"></textarea>
+                                                    <div class="col-12 col-sm-6">
+                                                        <div class="form-group">
+                                                            <label for="account-address">Address</label>
+                                                            <div class="input-group input-group-merge">
+                                                                <div class="input-group-prepend">
+                                                                    <span class="input-group-text"><i data-feather="map-pin"></i></span>
+                                                                </div>
+                                                                <input type="text" id="contact-icon" class="form-control" name="address" placeholder="Address" value="31B Washington DC" />
+                                                            </div>
                                                         </div>
-                                                        <small class="textarea-counter-value float-right"><span class="char-count">0</span> / 200 </small>
+                                                    </div>
+                                                    <div class="col-12 col-sm-6">
+                                                        <div class="form-group">
+                                                            <label for="account-phone">Phone</label>
+                                                                <div class="input-group input-group-merge">
+                                                                    <div class="input-group-prepend">
+                                                                        <span class="input-group-text"><i data-feather="smartphone"></i></span>
+                                                                    </div>
+                                                                    <input type="number" id="contact-icon" class="form-control" name="contact-icon" placeholder="Mobile" value="09999999"/>
+                                                                </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 col-sm-6">
+                                                        <div class="form-group">
+                                                            <label for="account-birth-date">Birth Date</label>
+                                                            <input type="text" class="form-control flatpickr" placeholder="Birth Date" id="account-birth-date" name="dob" value="2002-10-05" />
+                                                        </div>
                                                     </div>
                                                     <!-- Nếu save change thì hiện alert -->
                                                     <!-- <div class="col-12 mt-75">
@@ -226,8 +243,6 @@
                                             <!--/ form -->
                                         </div>
                                         <!--/ general tab -->
-                                        </div>
-                                        <!--/ change password -->
                                     </div>
                                 </div>
                             </div>

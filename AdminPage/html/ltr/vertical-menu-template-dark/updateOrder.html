@@ -118,7 +118,7 @@
                 </li>
                 <li class=" nav-item"><a class="d-flex align-items-center" href="listOrder.html"><i data-feather="check-square"></i><span class="menu-title text-truncate" data-i18n="User">List Order</span></a>
                 </li>
-                <li class="active nav-item"><a class="d-flex align-items-center" href="page-account-settings.html"><i data-feather="settings"></i><span class="menu-item text-truncate" data-i18n="Account Settings">Account Settings</span></a>
+                <li class=" nav-item"><a class="d-flex align-items-center" href="page-account-settings.html"><i data-feather="settings"></i><span class="menu-item text-truncate" data-i18n="Account Settings">Account Settings</span></a>
                 </li>
             </ul>
         </div>
@@ -134,12 +134,12 @@
                 <div class="content-header-left col-md-9 col-12 mb-2">
                     <div class="row breadcrumbs-top">
                         <div class="col-12">
-                            <h2 class="content-header-title float-left mb-0">Account Settings</h2>
+                            <h2 class="content-header-title float-left mb-0">Update Order</h2>
                             <div class="breadcrumb-wrapper">
                                 <ol class="breadcrumb">
-                                    <li class="breadcrumb-item"><a href="index.html">Home</a>
+                                    <li class="breadcrumb-item"><a href="listOrder.html">List Order</a>
                                     </li>
-                                    <li class="breadcrumb-item active"> Account Settings
+                                    <li class="breadcrumb-item active"> Update Order
                                     </li>
                                 </ol>
                             </div>
@@ -151,159 +151,75 @@
                 <!-- account setting page -->
                 <section id="page-account-settings">
                     <div class="row">
-                        <!-- left menu section -->
-                        <div class="col-md-3 mb-2 mb-md-0">
-                            <ul class="nav nav-pills flex-column nav-left">
-                                <!-- general -->
-                                <li class="nav-item">
-                                    <a class="nav-link active" id="account-pill-general" data-toggle="pill" href="#account-vertical-general" aria-expanded="true">
-                                        <i data-feather="user" class="font-medium-3 mr-1"></i>
-                                        <span class="font-weight-bold">General</span>
-                                    </a>
-                                </li>
-                                <!-- change password -->
-                                <li class="nav-item">
-                                    <a class="nav-link" id="account-pill-password" data-toggle="pill" href="#account-vertical-password" aria-expanded="false">
-                                        <i data-feather="lock" class="font-medium-3 mr-1"></i>
-                                        <span class="font-weight-bold">Change Password</span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                        <!--/ left menu section -->
-
                         <!-- right content section -->
-                        <div class="col-md-9">
+                        <div class="col-md-12">
                             <div class="card">
                                 <div class="card-body">
-                                    <div class="tab-content">
-                                        <!-- general tab -->
-                                        <div role="tabpanel" class="tab-pane active" id="account-vertical-general" aria-labelledby="account-pill-general" aria-expanded="true">
-                                            <!-- header media -->
-                                            <div class="media">
-                                                <a href="javascript:void(0);" class="mr-25">
-                                                    <img src="../../../app-assets/images/portrait/small/avatar-s-11.jpg" id="account-upload-img" class="rounded mr-50" alt="profile image" height="80" width="80" />
-                                                </a>
-                                                <!-- upload and reset button -->
-                                                <div class="media-body mt-75 ml-1">
-                                                    <label for="account-upload" class="btn btn-sm btn-primary mb-75 mr-75">Upload</label>
-                                                    <input type="file" id="account-upload" hidden accept="image/*" />
-                                                    <!-- <button class="btn btn-sm btn-outline-secondary mb-75">Reset</button> -->
-                                                    <p>Allowed JPG, GIF or PNG. Max size of 800kB</p>
-                                                </div>
-                                                <!--/ upload and reset button -->
+                                    <div class="col-lg-6 col-md-12">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <ul class="list-group">
+                                                    <li class="list-group-item">ID Order: <span class="font-weight-bold"> #1245</span></li>
+                                                    <li class="list-group-item">Name: <span class="font-weight-bold"> Hieu</span></li>
+                                                    <li class="list-group-item">Pay: <span class="font-weight-bold"> VNPAY</span></li>
+                                                    <li class="list-group-item">Status: <span class="font-weight-bold"> Delivery</span></li>
+                                                </ul>
                                             </div>
-                                            <!--/ header media -->
-
-                                            <!-- form -->
-                                            <form class="validate-form mt-2">
-                                                <div class="row">
-                                                    <div class="col-12 col-sm-6">
-                                                        <div class="form-group">
-                                                            <label for="account-name">Full Name</label>
-                                                            <input type="text" class="form-control" id="account-name" name="name" placeholder="Full Name" value="John Doe" />
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-12 col-sm-6">
-                                                        <div class="form-group">
-                                                            <label for="account-e-mail">E-mail</label>
-                                                            <input type="email" class="form-control" id="account-e-mail" name="email" placeholder="Email" value="granger007@hogward.com" />
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-12 col-sm-6">
-                                                        <div class="form-group">
-                                                            <label for="account-address">Address</label>
-                                                            <input type="text" class="form-control" id="account-company" name="address" placeholder="Address" value="31B Washington DC" />
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-12 col-sm-6">
-                                                        <div class="form-group">
-                                                            <label for="account-phone">Phone</label>
-                                                            <input type="text" class="form-control" id="account-phone" placeholder="Phone number" value="(+656) 254 2568" name="phone" />
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-12 col-sm-6">
-                                                        <div class="form-group">
-                                                            <label for="account-birth-date">Birth date</label>
-                                                            <input type="text" class="form-control flatpickr" placeholder="Birth date" id="account-birth-date" name="dob" />
-                                                        </div>
-                                                    </div>
-                                                    <!-- Nếu save change thì hiện alert -->
-                                                    <!-- <div class="col-12 mt-75">
-                                                        <div class="alert alert-warning mb-50" role="alert">
-                                                            <h4 class="alert-heading">Saved Sucsess</h4>
-                                                        </div>
-                                                    </div> -->
-                                                    <div class="col-12">
-                                                        <button type="submit" class="btn btn-primary mt-2 mr-1">Save changes</button>
-                                                        <button type="reset" class="btn btn-outline-secondary mt-2">Cancel</button>
-                                                    </div>
-                                                </div>
-                                            </form>
-                                            <!--/ form -->
                                         </div>
-                                        <!--/ general tab -->
-
-                                        <!-- change password -->
-                                        <div class="tab-pane fade" id="account-vertical-password" role="tabpanel" aria-labelledby="account-pill-password" aria-expanded="false">
-                                            <!-- form -->
-                                            <form class="validate-form">
-                                                <div class="row">
-                                                    <div class="col-12 col-sm-6">
-                                                        <div class="form-group">
-                                                            <label for="account-old-password">Old Password</label>
-                                                            <div class="input-group form-password-toggle input-group-merge">
-                                                                <input type="password" class="form-control" id="account-old-password" name="password" placeholder="Old Password" />
-                                                                <div class="input-group-append">
-                                                                    <div class="input-group-text cursor-pointer">
-                                                                        <i data-feather="eye"></i>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="row">
-                                                    <div class="col-12 col-sm-6">
-                                                        <div class="form-group">
-                                                            <label for="account-new-password">New Password</label>
-                                                            <div class="input-group form-password-toggle input-group-merge">
-                                                                <input type="password" id="account-new-password" name="new-password" class="form-control" placeholder="New Password" />
-                                                                <div class="input-group-append">
-                                                                    <div class="input-group-text cursor-pointer">
-                                                                        <i data-feather="eye"></i>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-12 col-sm-6">
-                                                        <div class="form-group">
-                                                            <label for="account-retype-new-password">Retype New Password</label>
-                                                            <div class="input-group form-password-toggle input-group-merge">
-                                                                <input type="password" class="form-control" id="account-retype-new-password" name="confirm-new-password" placeholder="New Password" />
-                                                                <div class="input-group-append">
-                                                                    <div class="input-group-text cursor-pointer"><i data-feather="eye"></i></div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-12">
-                                                        <button type="submit" class="btn btn-primary mr-1 mt-1">Save changes</button>
-                                                        <button type="reset" class="btn btn-outline-secondary mt-1">Cancel</button>
-                                                    </div>
-                                                </div>
-                                            </form>
-                                            <!--/ form -->
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="card">
+                                            <div class="table-responsive">
+                                                <table class="table">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>Food Name</th>
+                                                            <th>Quantity</th>
+                                                            <th>Total</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>
+                                                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Eq_it-na_pizza-margherita_sep2005_sml.jpg/800px-Eq_it-na_pizza-margherita_sep2005_sml.jpg" class="mr-75" height="50" width="50" alt="Peter" />
+                                                                <span class="font-weight-bold">Pizza</span>
+                                                            </td>
+                                                            <td>
+                                                                <span class="font-weight-bold" style="padding-left: 25px;">2</span>
+                                                            </td>
+                                                            <td>
+                                                                <span class="font-weight-bold" style="padding-left: 10px;">50$</span>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <img src="https://c4.wallpaperflare.com/wallpaper/143/223/715/food-burgers-hamburgers-fast-food-wallpaper-preview.jpg" class="mr-75" height="50" width="50" alt="Peter" />
+                                                                <span class="font-weight-bold">Hambergur</span>
+                                                            </td>
+                                                            <td>
+                                                                <span class="font-weight-bold" style="padding-left: 25px;">2</span>
+                                                            </td>
+                                                            <td>
+                                                                <span class="font-weight-bold" style="padding-left: 10px;">50$</span>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
                                         </div>
-                                        <!--/ change password -->
+                                        <button type="submit" class="btn btn-danger mt-2 mr-1">Cancel</button>
+                                        <button type="submit" class="btn btn-success mt-2 mr-1">Success</button>
+                                        <a href="listManager.html" class="btn btn-outline-secondary mt-2">Back</a>
+                                    </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <!--/ right content section -->
+                        
                     </div>
                 </section>
+                
                 <!-- / account setting page -->
 
             </div>

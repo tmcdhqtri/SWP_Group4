@@ -180,12 +180,47 @@
                                                 <div class="row">
                                                     <div class="col-12 col-sm-6">
                                                         <div class="form-group">
+                                                            <label for="username">Username</label>
+                                                            <div class="input-group input-group-merge">
+                                                                <div class="input-group-prepend">
+                                                                    <span class="input-group-text"><i data-feather='user-check'></i></span>
+                                                                </div>
+                                                                <input type="text" id="username" class="form-control" name="username" placeholder="Username"  />
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 col-sm-6">
+                                                        <div class="form-group">
                                                             <label for="account-name">Full Name</label>
                                                             <div class="input-group input-group-merge">
                                                                 <div class="input-group-prepend">
                                                                     <span class="input-group-text"><i data-feather="user"></i></span>
                                                                 </div>
-                                                                <input type="text" id="fname-icon" class="form-control" name="fname-icon" placeholder="Full Name"  />
+                                                                <input type="text" id="account-name" class="form-control" name="account-name" placeholder="Full Name"  required/>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                     <div class="col-12 col-sm-6">
+                                                        <div class="form-group">
+                                                            <label for="account-new-password">New Password</label>
+                                                            <div class="input-group form-password-toggle input-group-merge">
+                                                                <input type="password" id="account-new-password" name="new-password" class="form-control" placeholder="New Password" />
+                                                                <div class="input-group-append">
+                                                                    <div class="input-group-text cursor-pointer">
+                                                                        <i data-feather="eye"></i>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 col-sm-6">
+                                                        <div class="form-group">
+                                                            <label for="account-retype-new-password">Retype New Password</label>
+                                                            <div class="input-group form-password-toggle input-group-merge">
+                                                                <input type="password" class="form-control" id="account-retype-new-password" name="confirm-new-password" placeholder="New Password" />
+                                                                <div class="input-group-append">
+                                                                    <div class="input-group-text cursor-pointer"><i data-feather="eye"></i></div>
+                                                                </div>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -198,6 +233,12 @@
                                                                 </div>
                                                                 <input type="email" id="email-icon" class="form-control" name="email" placeholder="Email" />
                                                             </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 col-sm-6">
+                                                        <div class="form-group">
+                                                            <label for="account-birth-date">Birth Date</label>
+                                                            <input type="text" class="form-control flatpickr" placeholder="Birth Date" id="account-birth-date" name="dob"/>
                                                         </div>
                                                     </div>
                                                     <div class="col-12 col-sm-6">
@@ -220,12 +261,6 @@
                                                                     </div>
                                                                     <input type="number" id="contact-icon" class="form-control" name="contact-icon" placeholder="Mobile" />
                                                                 </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-12 col-sm-6">
-                                                        <div class="form-group">
-                                                            <label for="account-birth-date">Birth Date</label>
-                                                            <input type="text" class="form-control flatpickr" placeholder="Birth Date" id="account-birth-date" name="dob"/>
                                                         </div>
                                                     </div>
                                                     <!-- Nếu save change thì hiện alert -->

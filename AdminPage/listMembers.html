@@ -112,7 +112,7 @@
                 </li>
                 <li class=" nav-item"><a class="d-flex align-items-center" href="listStaff.html"><i data-feather="user"></i><span class="menu-title text-truncate" data-i18n="User">List Staff</span></a>
                 </li>
-                <li class="active nav-item"><a class="d-flex align-items-center" href="listMembers.html"><i data-feather="user"></i><span class="menu-title text-truncate" data-i18n="User">List Member</span></a>
+                <li class="active nav-item"><a class="d-flex align-items-center" href="listMembers.html"><i data-feather="user"></i><span class="menu-title text-truncate" data-i18n="User">List Customer</span></a>
                 </li>
                 <li class=" nav-item"><a class="d-flex align-items-center" href="listOrder.html"><i data-feather="check-square"></i><span class="menu-title text-truncate" data-i18n="User">List Order</span></a>
                 </li>
@@ -143,10 +143,40 @@
                                             <th>Full Name</th>
                                             <th>Email</th>
                                             <th>Phone</th>
+                                            <th>Status</th>
                                             <th>Actions</th>
                                         </tr>
                                     </thead>
                                     <tbody>
+                                        <tr>
+                                            <td>
+                                                <!-- <img src="./app-assets/images/icons/angular.svg" class="mr-75" height="20" width="20" alt="Angular" /> -->
+                                                <span class="font-weight-bold">#15245</span>
+                                            </td>
+                                            <td>Haver Charls</td>
+                                            <td>
+                                                <span class="font-weight-bold">member@gmail.com</span>
+                                            </td>
+                                            <td><span class="font-weight-bold">09091234567</span></td>
+                                            <td><div class="badge badge-glow badge-success" style="padding: 4px 12px;">Action</div></td>
+                                            <td>
+                                                <div class="dropdown">
+                                                    <button type="button" class="btn btn-sm dropdown-toggle hide-arrow" data-toggle="dropdown">
+                                                        <i data-feather="more-vertical"></i>
+                                                    </button>
+                                                    <div class="dropdown-menu">
+                                                        <a class="dropdown-item" href="viewMember.html">
+                                                            <i data-feather="edit-2" class="mr-50"></i>
+                                                            <span>Edit</span>
+                                                        </a>
+                                                        <a class="dropdown-item" href="javascript:void(0);">
+                                                            <i data-feather="trash" class="mr-50"></i>
+                                                            <span>Delete</span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
                                         <tr>
                                             <td>
                                                 <!-- <img src="./app-assets/images/icons/angular.svg" class="mr-75" height="20" width="20" alt="Angular" /> -->
@@ -157,6 +187,7 @@
                                                 <span class="font-weight-bold">member@gmail.com</span>
                                             </td>
                                             <td><span class="font-weight-bold">09091234567</span></td>
+                                            <td><div class="badge badge-glow badge-danger">Inaction</div></td>
                                             <td>
                                                 <div class="dropdown">
                                                     <button type="button" class="btn btn-sm dropdown-toggle hide-arrow" data-toggle="dropdown">

@@ -31,6 +31,8 @@
     <link rel="stylesheet" type="text/css" href="./app-assets/css/themes/semi-dark-layout.css">
 
     <!-- BEGIN: Page CSS-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simple-notify@0.5.4/dist/simple-notify.min.css" />
+
     <link rel="stylesheet" type="text/css" href="./app-assets/css/core/menu/menu-types/vertical-menu.css">
     <link rel="stylesheet" type="text/css" href="./app-assets/css/plugins/forms/form-validation.css">
     <link rel="stylesheet" type="text/css" href="./app-assets/css/pages/app-user.css">
@@ -169,7 +171,7 @@
                                                             <i data-feather="edit-2" class="mr-50"></i>
                                                             <span>Edit</span>
                                                         </a>
-                                                        <a class="dropdown-item" href="javascript:void(0);">
+                                                        <a id="btn" class="dropdown-item" href="javascript:void(0);">
                                                             <i data-feather="trash" class="mr-50"></i>
                                                             <span>Delete</span>
                                                         </a>
@@ -254,7 +256,31 @@
     <!-- BEGIN: Page JS-->
     <script src="./app-assets/js/scripts/pages/app-user-list.js"></script>
     <!-- END: Page JS-->
+    <script>
+        const btn = document.querySelector('#btn')
 
+btn.addEventListener('click', () => {
+  new Notify ({
+    status: 'success',
+    title: 'Delete Success',
+    text: 'Successfully !',
+    effect: 'slide',
+    speed: 300,
+    customClass: '',
+    customIcon: '',
+    showIcon: true,
+    showCloseButton: true,
+    autoclose: true,
+    autotimeout: 3000,
+    gap: 20,
+    distance: 20,
+    type: 1,
+    position: 'right top',
+    customWrapper: '',
+  })
+})
+    </script>
+        <script src="https://cdn.jsdelivr.net/npm/simple-notify@0.5.4/dist/simple-notify.min.js"></script>
     <script>
         $(window).on('load', function() {
             if (feather) {

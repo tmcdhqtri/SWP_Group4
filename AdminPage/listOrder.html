@@ -13,6 +13,7 @@
     <link rel="apple-touch-icon" href="./app-assets/images/ico/apple-icon-120.png">
     <link rel="shortcut icon" type="image/x-icon" href="./app-assets/images/ico/favicon.ico">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500;1,600" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simple-notify@0.5.4/dist/simple-notify.min.css" />
 
     <!-- BEGIN: Vendor CSS-->
     <link rel="stylesheet" type="text/css" href="./app-assets/vendors/css/vendors.min.css">
@@ -183,7 +184,7 @@
                                                             <i data-feather="edit-2" class="mr-50"></i>
                                                             <span>Edit</span>
                                                         </a>
-                                                        <a class="dropdown-item" href="javascript:void(0);">
+                                                        <a id="btn" class="dropdown-item" href="javascript:void(0);">
                                                             <i data-feather="trash" class="mr-50"></i>
                                                             <span>Delete</span>
                                                         </a>
@@ -311,7 +312,32 @@
     <script src="./app-assets/vendors/js/tables/datatable/dataTables.responsive.min.js"></script>
     <script src="./app-assets/vendors/js/tables/datatable/responsive.bootstrap4.min.js"></script>
     <!-- END: Page Vendor JS-->
+    <script>
+        const btn = document.querySelector('#btn')
 
+btn.addEventListener('click', () => {
+  new Notify ({
+    status: 'success',
+    title: 'Delete Success',
+    text: 'Successfully !',
+    effect: 'slide',
+    speed: 300,
+    customClass: '',
+    customIcon: '',
+    showIcon: true,
+    showCloseButton: true,
+    autoclose: true,
+    autotimeout: 3000,
+    gap: 20,
+    distance: 20,
+    type: 1,
+    position: 'right top',
+    customWrapper: '',
+  })
+})
+    </script>
+        <script src="https://cdn.jsdelivr.net/npm/simple-notify@0.5.4/dist/simple-notify.min.js">
+</script>
     <!-- BEGIN: Theme JS-->
     <script src="./app-assets/js/core/app-menu.js"></script>
     <script src="./app-assets/js/core/app.js"></script>

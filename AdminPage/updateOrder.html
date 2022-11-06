@@ -19,6 +19,7 @@
     <link rel="stylesheet" type="text/css" href="./app-assets/vendors/css/forms/select/select2.min.css">
     <link rel="stylesheet" type="text/css" href="./app-assets/vendors/css/pickers/flatpickr/flatpickr.min.css">
     <!-- END: Vendor CSS-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simple-notify@0.5.4/dist/simple-notify.min.css" />
 
     <!-- BEGIN: Theme CSS-->
     <link rel="stylesheet" type="text/css" href="./app-assets/css/bootstrap.css">
@@ -205,8 +206,8 @@
                                                 </table>
                                             </div>
                                         </div>
-                                        <button type="submit" class="btn btn-danger mt-2 mr-1">Cancel</button>
-                                        <button type="submit" class="btn btn-success mt-2 mr-1">Success</button>
+                                        <button id="btn1" type="submit" class="btn btn-danger mt-2 mr-1">Cancel</button>
+                                        <button id="btn"type="submit" class="btn btn-success mt-2 mr-1">Success</button>
                                         <a href="listManager.html" class="btn btn-outline-secondary mt-2">Back</a>
                                     </div>
                                     </div>
@@ -254,7 +255,57 @@
     <!-- BEGIN: Page JS-->
     <script src="./app-assets/js/scripts/pages/page-account-settings.js"></script>
     <!-- END: Page JS-->
-
+    <script>
+        const btn1 = document.querySelector('#btn1')
+    
+    btn1.addEventListener('click', () => {
+      new Notify ({
+        status: 'error',
+        title: 'Order is canceled',
+        text: 'Cancled',
+        effect: 'slide',
+        speed: 300,
+        customClass: '',
+        customIcon: '',
+        showIcon: true,
+        showCloseButton: true,
+        autoclose: true,
+        autotimeout: 3000,
+        gap: 20,
+        distance: 20,
+        type: 1,
+        position: 'right top',
+        customWrapper: '',
+      })
+    })
+       </script>
+    <script>
+        const btn = document.querySelector('#btn')
+    
+    btn.addEventListener('click', () => {
+      new Notify ({
+        status: 'success',
+        title: 'Delivery Successfully',
+        text: 'Successfully !',
+        effect: 'slide',
+        speed: 300,
+        customClass: '',
+        customIcon: '',
+        showIcon: true,
+        showCloseButton: true,
+        autoclose: true,
+        autotimeout: 3000,
+        gap: 20,
+        distance: 20,
+        type: 1,
+        position: 'right top',
+        customWrapper: '',
+      })
+    })
+    </script>
+      </script>
+      <script src="https://cdn.jsdelivr.net/npm/simple-notify@0.5.4/dist/simple-notify.min.js">
+</script>
     <script>
         $(window).on('load', function() {
             if (feather) {

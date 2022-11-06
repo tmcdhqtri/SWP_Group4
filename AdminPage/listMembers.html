@@ -20,6 +20,7 @@
     <link rel="stylesheet" type="text/css" href="./app-assets/vendors/css/tables/datatable/responsive.bootstrap4.min.css">
     <link rel="stylesheet" type="text/css" href="./app-assets/vendors/css/tables/datatable/buttons.bootstrap4.min.css">
     <!-- END: Vendor CSS-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simple-notify@0.5.4/dist/simple-notify.min.css" />
 
     <!-- BEGIN: Theme CSS-->
     <link rel="stylesheet" type="text/css" href="./app-assets/css/bootstrap.css">
@@ -169,7 +170,7 @@
                                                             <i data-feather="edit-2" class="mr-50"></i>
                                                             <span>Edit</span>
                                                         </a>
-                                                        <a class="dropdown-item" href="javascript:void(0);">
+                                                        <a id="btn" class="dropdown-item" href="javascript:void(0);">
                                                             <i data-feather="trash" class="mr-50"></i>
                                                             <span>Delete</span>
                                                         </a>
@@ -262,6 +263,33 @@
             }
         })
     </script>
+    
+    <script>
+        const btn = document.querySelector('#btn')
+
+btn.addEventListener('click', () => {
+  new Notify ({
+    status: 'success',
+    title: 'Delete Success',
+    text: 'Successfully !',
+    effect: 'slide',
+    speed: 300,
+    customClass: '',
+    customIcon: '',
+    showIcon: true,
+    showCloseButton: true,
+    autoclose: true,
+    autotimeout: 3000,
+    gap: 20,
+    distance: 20,
+    type: 1,
+    position: 'right top',
+    customWrapper: '',
+  })
+})
+    </script>
+        <script src="https://cdn.jsdelivr.net/npm/simple-notify@0.5.4/dist/simple-notify.min.js">
+</script>
 </body>
 <!-- END: Body-->
 
